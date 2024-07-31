@@ -30,23 +30,6 @@
     document.head.appendChild(s);
 </script>
 
-<script type="text/javascript">
-        // BBR (Back Button Redirection)
-        var back_ntb_link = 'https://app.impih.com/?utm_medium=a049de707e16aec53009ccb6d1f483b5325a5931&utm_campaign=ng_smartlink_20240522&1=BBR';
-        if (typeof back_ntb_link !== 'undefined' && back_ntb_link !== null) {
-            !(function() {
-                var t;
-                try {
-                    const URL = window.location.href.split(/[#]/)[0];
-                    for (t = 0; 10 > t; ++t) history.pushState({}, '', URL + '#');
-                    onpopstate = function(event) {
-                        event.state && location.replace(back_ntb_link);
-                    };
-                } catch (o) {
-                    console.log(o);
-                }
-            })();
-        }
 
 	    
     
